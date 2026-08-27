@@ -8,7 +8,7 @@ I build **AI systems from the ground up**, with a current focus on **language mo
 
 My work is primarily centered around **Python and PyTorch**, supported by NumPy and TensorFlow, while I also use C# for software development. My goal is to grow into an **AI/ML engineer capable of building complete intelligent systems end-to-end**, including model development, API integration, deployment, and real-world applications.
 
-I’m especially interested in **LLMs, deep learning, RAG systems, AI-powered applications, and research-driven development**, and I actively look for opportunities to turn these skills into ambitious projects and hackathon prototypes.
+I’m especially interested in **LLMs, deep learning, RAG systems, AI-powered applications, and research-driven development**
 
 <br>
 
