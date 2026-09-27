@@ -167,7 +167,7 @@ My work sits at the intersection of **artificial intelligence, systems engineeri
 
 <td width="50%" valign="top">
 
-### 🧬 [CodeDNA](https://github.com/Helincharm/CodeDNA-Windows)
+###  [CodeDNA](https://github.com/Helincharm/CodeDNA-Windows)
 
 **Desktop Security Analysis & Code Intelligence**
 
@@ -179,7 +179,7 @@ Local-first security analysis combining static analysis, framework intelligence 
 
 <td width="50%" valign="top">
 
-### ◇ [DataFlow Map](https://github.com/Helincharm/DataFlow-Map-Windows)
+###  [DataFlow Map](https://github.com/Helincharm/DataFlow-Map-Windows)
 
 **Interactive Data-Flow Intelligence**
 
