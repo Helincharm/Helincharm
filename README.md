@@ -1,146 +1,195 @@
 <div align="center">
 
-# HELIN
+# HELINITY
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=26&pause=1100&color=58A6FF&center=true&vCenter=true&width=720&lines=AI+%2F+Machine+Learning+Developer;Building+AI+Systems+%26+Developer+Tools;Code+Intelligence+%E2%80%A2+Static+Analysis+%E2%80%A2+LLMs"
-    alt="Typing SVG"
+    src="./assets/helinity-focus.svg"
+    alt="LLMs · Code Intelligence · Embedded Systems"
+    width="900"
   />
 </p>
 
 <br>
 
-### AI Systems · Code Intelligence · Developer Tools
+## Technologies & Tools
 
-Building intelligent systems and developer-focused software across  
-**machine learning, language models, static analysis and data-flow analysis.**
+<table align="center">
 
-<br><br>
+<tr>
+  <td align="center" width="96">
+    <img src="https://techstack-generator.vercel.app/python-icon.svg" width="46" height="46" alt="Python"/><br><b>Python</b>
+  </td>
 
-## Technology Stack
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" width="46" height="46" alt="PyTorch"/><br><b>PyTorch</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" width="46" height="46" alt="TensorFlow"/><br><b>TensorFlow</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="46" height="46" alt="FastAPI"/><br><b>FastAPI</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React"/><br><b>React</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="46" height="46" alt="TypeScript"/><br><b>TypeScript</b>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="46" height="46" alt="C#"/><br><b>C#</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://techstack-generator.vercel.app/docker-icon.svg" width="46" height="46" alt="Docker"/><br><b>Docker</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="46" height="46" alt="PostgreSQL"/><br><b>PostgreSQL</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="46" height="46" alt="Git"/><br><b>Git</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="46" height="46" alt="GitHub Actions"/><br><b>Actions</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="46" height="46" alt="Linux"/><br><b>Linux</b>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" width="96">
+    <img src="https://cdn.simpleicons.org/burpsuite" width="46" height="46" alt="Burp Suite"/><br><b>Burp Suite</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.simpleicons.org/metasploit" width="46" height="46" alt="Metasploit"/><br><b>Metasploit</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.simpleicons.org/raspberrypi" width="46" height="46" alt="Raspberry Pi"/><br><b>Raspberry Pi</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.simpleicons.org/espressif" width="46" height="46" alt="ESP32"/><br><b>ESP32</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="46" height="46" alt="VS Code"/><br><b>VS Code</b>
+  </td>
+
+  <td align="center" width="96">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" width="46" height="46" alt="PyCharm"/><br><b>PyCharm</b>
+  </td>
+</tr>
+
+</table>
 
 <br>
 
-<table align="center">
-<tr>
-  <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/python-icon.svg" width="52" height="52" alt="Python"/>
-    <br>Python
-  </td>
+### ✦ Artificial Intelligence · Machine Learning · Cybersecurity
 
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" width="52" height="52" alt="PyTorch"/>
-    <br>PyTorch
-  </td>
+Building modern software systems across **AI/ML, large language models, backend engineering, cybersecurity, developer tooling, and embedded computing**.
 
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" width="52" height="52" alt="NumPy"/>
-    <br>NumPy
-  </td>
+Focused on **LLM systems, code intelligence, model inference, intelligent automation, security tooling, and production-oriented engineering**.
 
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" width="52" height="52" alt="TensorFlow"/>
-    <br>TensorFlow
-  </td>
+<br>
 
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="52" height="52" alt="FastAPI"/>
-    <br>FastAPI
-  </td>
+---
 
-  <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="52" height="52" alt="TypeScript"/>
-    <br>TypeScript
-  </td>
-</tr>
-
-<tr>
-  <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/react-icon.svg" width="52" height="52" alt="React"/>
-    <br>React
-  </td>
-
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="52" height="52" alt="C#"/>
-    <br>C#
-  </td>
-
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" width="52" height="52" alt="SQLite"/>
-    <br>SQLite
-  </td>
-
-  <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/docker-icon.svg" width="52" height="52" alt="Docker"/>
-    <br>Docker
-  </td>
-
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="52" height="52" alt="Git"/>
-    <br>Git
-  </td>
-
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="52" height="52" alt="GitHub Actions"/>
-    <br>Actions
-  </td>
-</tr>
-</table>
-
-<br><br>
-
-## Selected Work
+## <img src="./assets/engineering-domains.svg" alt="Engineering Domains" height="36"/>
 
 <table>
 <tr>
+
 <td width="50%" valign="top">
 
-### CodeDNA
+### AI & Intelligent Systems
 
-**Desktop Security Analysis & Code Intelligence**
+**LLMs & Transformers**  
+Architecture, attention, embeddings and inference
 
-Static security analysis, framework intelligence, project inspection and structured security findings for local codebases.
+**Retrieval & Agents**  
+RAG, semantic search, vector retrieval and tool-using systems
 
-`Python` `AST` `Data Flow` `Security` `Static Analysis`
+**Multimodal Intelligence**  
+Computer vision, NLP and intelligent automation
+
+**Model Engineering**  
+Training, optimization, evaluation and deployment
 
 </td>
 
 <td width="50%" valign="top">
 
-### DataFlow Map
+### Systems & Security
 
-**Interactive Data-Flow Intelligence**
+**Code Intelligence**  
+AST analysis, static analysis and data-flow systems
 
-Local-first static analysis and interactive visualization for understanding data movement across Python and PyTorch projects.
+**Cybersecurity**  
+Application security, security automation and analysis tooling
 
-`Python` `PyTorch` `React` `AST` `Code Intelligence`
+**Backend Engineering**  
+APIs, infrastructure and production software
+
+**Embedded & Edge**  
+ESP32, Raspberry Pi, IoT and intelligent edge systems
 
 </td>
+
 </tr>
 </table>
 
-<br><br>
+<br>
 
-## Engineering Focus
+My work sits at the intersection of **artificial intelligence, systems engineering, cybersecurity, and intelligent software development** — combining model-level engineering with software architecture, automation, security, and edge computing to build reliable, production-oriented systems.
 
-`LLMs` &nbsp;•&nbsp;
-`Deep Learning` &nbsp;•&nbsp;
-`Transformers` &nbsp;•&nbsp;
-`Code Intelligence` &nbsp;•&nbsp;
-`Static Analysis` &nbsp;•&nbsp;
-`Data-Flow Analysis` &nbsp;•&nbsp;
-`Developer Tools`
+<br>
 
-<br><br>
+---
 
-<img
-  src="https://raw.githubusercontent.com/Helincharm/Helincharm/output/github-contribution-grid-snake-dark.svg"
-  alt="GitHub contribution snake"
-/>
+## <img src="./assets/selected-work.svg" alt="Selected Work" height="36"/>
 
-<br><br>
+<table>
+<tr>
 
-<sub>Building under <b>Helinity</b>.</sub>
+<td width="50%" valign="top">
+
+### 🧬 [CodeDNA](https://github.com/Helincharm/CodeDNA-Windows)
+
+**Desktop Security Analysis & Code Intelligence**
+
+Local-first security analysis combining static analysis, framework intelligence and structured security findings.
+
+`AST` · `Taint / Data Flow` · `Static Analysis` · `Security Intelligence`
+
+</td>
+
+<td width="50%" valign="top">
+
+### ◇ [DataFlow Map](https://github.com/Helincharm/DataFlow-Map-Windows)
+
+**Interactive Data-Flow Intelligence**
+
+Local-first analysis and visualization of data movement across Python and PyTorch codebases.
+
+`Python` · `PyTorch` · `AST` · `Data Flow` · `Dependency Tracing`
+
+</td>
+
+</tr>
+</table>
 
 </div>

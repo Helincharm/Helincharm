@@ -1,0 +1,21 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1000"
+  height="90"
+  viewBox="0 0 1000 90"
+>
+  <rect width="100%" height="100%" fill="transparent"/>
+
+  <text
+    x="500"
+    y="56"
+    text-anchor="middle"
+    font-family="Segoe UI, Trebuchet MS, Arial, sans-serif"
+    font-size="34"
+    font-weight="600"
+    letter-spacing="0.4"
+    fill="#7C3AED"
+  >
+    LLMs · Code Intelligence · Embedded Systems
+  </text>
+</svg>

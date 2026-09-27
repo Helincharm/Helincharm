@@ -1,0 +1,27 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="400"
+  height="36"
+  viewBox="0 0 400 36"
+>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#54ABFB"/>
+      <stop offset="0.33" stop-color="#3C8CEA"/>
+      <stop offset="0.66" stop-color="#2D6FCE"/>
+      <stop offset="1" stop-color="#1F4BA5"/>
+    </linearGradient>
+  </defs>
+
+  <text
+    x="200"
+    y="26"
+    text-anchor="middle"
+    font-family="Segoe UI, Trebuchet MS, Arial, sans-serif"
+    font-size="24"
+    font-weight="600"
+    fill="url(#blue)"
+  >
+    ◈ Selected Work
+  </text>
+</svg>
