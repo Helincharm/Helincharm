@@ -312,7 +312,23 @@ def stack_usage(repos, catalog, top=8):
 # SVG
 # --------------------------------------------------------------------------
 
-def card(width, height, label, body, extra_defs=""):
+# Entrance animations. Keyframes only define the "from" state, so the resting
+# state is the element's own attributes: with animations off, nothing hides.
+BASE_CSS = """
+    @keyframes fadeIn { from { opacity: 0; } }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(-10px); } }
+    @keyframes popIn { from { opacity: 0; transform: scale(0.6); } }
+    .fade { animation: fadeIn 0.6s ease-out both; }
+    .slide { animation: slideIn 0.6s ease-out both; }
+    .pop { transform-box: fill-box; transform-origin: center; animation: popIn 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }"""
+
+
+def anim(cls, delay):
+    return f' class="{cls}" style="animation-delay: {delay:.2f}s"'
+
+
+def card(width, height, label, body, extra_defs="", css=""):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{escape(label)}">
   <defs>
     <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
@@ -325,6 +341,8 @@ def card(width, height, label, body, extra_defs=""):
       <stop offset="1" stop-color="{PURPLE}" stop-opacity="0"/>
     </radialGradient>{extra_defs}
   </defs>
+  <style>{BASE_CSS}{css}
+  </style>
   <rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14" fill="{BG}" stroke="{PURPLE}" stroke-opacity="0.28"/>
   <rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14" fill="url(#haze)"/>
   <g font-family="{FONT}">
@@ -353,32 +371,40 @@ ICONS = {
 
 def stats_svg(rows, score):
     width, height = 459, 230
-    body = [f'    <text x="26" y="42" font-size="18" font-weight="700" fill="url(#title)">{escape(DISPLAY_NAME)}\'s GitHub Stats</text>']
+    body = [f'    <text x="26" y="42" font-size="18" font-weight="700" fill="url(#title)"{anim("fade", 0)}>'
+            f'{escape(DISPLAY_NAME)}\'s GitHub Stats</text>']
     for i, (icon, label, value) in enumerate(rows):
         y = 82 + i * 29
-        body.append(f'    <path d="{ICONS[icon]}" transform="translate(26 {y - 12})" fill="{VIOLET}"/>')
-        body.append(f'    <text x="52" y="{y}" font-size="14" font-weight="600" fill="{LAVENDER}">{escape(label)}:</text>')
-        body.append(f'    <text x="236" y="{y}" font-size="14" font-weight="700" fill="{WHITE}">{escape(value)}</text>')
+        body += [
+            f'    <g{anim("slide", 0.15 + 0.12 * i)}>',
+            f'      <path d="{ICONS[icon]}" transform="translate(26 {y - 12})" fill="{VIOLET}"/>',
+            f'      <text x="52" y="{y}" font-size="14" font-weight="600" fill="{LAVENDER}">{escape(label)}:</text>',
+            f'      <text x="236" y="{y}" font-size="14" font-weight="700" fill="{WHITE}">{escape(value)}</text>',
+            '    </g>',
+        ]
     cx, cy, r = 372, 128, 46
     circumference = 2 * math.pi * r
-    filled = max(0.04, min(score, 1)) * circumference
+    rest = circumference * (1 - max(0.04, min(score, 1)))
     body += [
-        f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{PURPLE}" stroke-opacity="0.2" stroke-width="8"/>',
+        f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{PURPLE}" stroke-opacity="0.2" stroke-width="8"{anim("fade", 0.2)}/>',
         f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#ring)" stroke-width="8" stroke-linecap="round"'
-        f' stroke-dasharray="{filled:.1f} {circumference:.1f}" transform="rotate(-90 {cx} {cy})"/>',
-        f'    <path d="{ICONS["github"]}" transform="translate({cx - 20} {cy - 20}) scale(2.5)" fill="{LAVENDER}"/>',
+        f' stroke-dasharray="{circumference:.1f}" stroke-dashoffset="{rest:.1f}" transform="rotate(-90 {cx} {cy})" class="rank"/>',
+        f'    <g{anim("pop", 0.3)}><path d="{ICONS["github"]}" transform="translate({cx - 20} {cy - 20}) scale(2.5)" fill="{LAVENDER}"/></g>',
     ]
     ring = f"""
     <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{PURPLE}"/>
       <stop offset="1" stop-color="{MAGENTA}"/>
     </linearGradient>"""
-    return card(width, height, f"{DISPLAY_NAME}'s GitHub Stats", "\n".join(body), ring)
+    css = f"""
+    @keyframes rankFill {{ from {{ stroke-dashoffset: {circumference:.1f}; }} }}
+    .rank {{ animation: rankFill 1.2s cubic-bezier(0.3, 0.7, 0.3, 1) 0.4s both; }}"""
+    return card(width, height, f"{DISPLAY_NAME}'s GitHub Stats", "\n".join(body), ring, css)
 
 
 def stack_svg(items):
     width, height = 374, 230
-    body = ['    <text x="26" y="42" font-size="18" font-weight="700" fill="url(#title)">Most Used Stack</text>']
+    body = [f'    <text x="26" y="42" font-size="18" font-weight="700" fill="url(#title)"{anim("fade", 0)}>Most Used Stack</text>']
     if not items:
         body.append(f'    <text x="26" y="80" font-size="13" fill="{LAVENDER}">No data yet</text>')
         return card(width, height, "Most Used Stack", "\n".join(body))
@@ -387,26 +413,42 @@ def stack_svg(items):
     top = 62 + (8 - len(items)) * row_gap / 2 + 14
     for i, (tech, pct) in enumerate(items):
         y = top + i * row_gap
-        body.append(f'    <circle cx="31" cy="{y - 4.5:.1f}" r="5" fill="{STACK_COLORS[i]}"/>')
-        body.append(f'    <text x="44" y="{y:.1f}" font-size="13" font-weight="600" fill="{LAVENDER}">{escape(tech)}'
-                    f' <tspan fill="{SOFT}" font-weight="400">{pct:.1f}%</tspan></text>')
+        body += [
+            f'    <g{anim("slide", 0.15 + 0.1 * i)}>',
+            f'      <circle cx="31" cy="{y - 4.5:.1f}" r="5" fill="{STACK_COLORS[i]}"/>',
+            f'      <text x="44" y="{y:.1f}" font-size="13" font-weight="600" fill="{LAVENDER}">{escape(tech)}'
+            f' <tspan fill="{SOFT}" font-weight="400">{pct:.1f}%</tspan></text>',
+            '    </g>',
+        ]
 
+    # The donut is drawn as one continuous sweep: each segment starts when the previous one ends.
     cx, cy, r, stroke = 282, 132, 54, 18
+    sweep_time, start = 1.1, 0.3
+    css = []
     if len(items) == 1:
-        body.append(f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{STACK_COLORS[0]}" stroke-width="{stroke}"/>')
+        length = 2 * math.pi * r
+        body.append(f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{STACK_COLORS[0]}" stroke-width="{stroke}"'
+                    f' stroke-dasharray="{length:.1f}" transform="rotate(-90 {cx} {cy})" class="seg0"/>')
+        css.append(f"    @keyframes seg0 {{ from {{ stroke-dashoffset: {length:.1f}; }} }}\n"
+                   f"    .seg0 {{ animation: seg0 {sweep_time}s ease-out {start}s both; }}")
     else:
         gap = math.radians(1.6)
-        angle = -math.pi / 2
+        angle, delay = -math.pi / 2, start
         for i, (_, pct) in enumerate(items):
             sweep = 2 * math.pi * pct / 100
             a0, a1 = angle + gap / 2, angle + max(sweep - gap / 2, gap / 2 + 0.001)
             x0, y0 = cx + r * math.cos(a0), cy + r * math.sin(a0)
             x1, y1 = cx + r * math.cos(a1), cy + r * math.sin(a1)
             large = 1 if a1 - a0 > math.pi else 0
+            length = r * (a1 - a0)
+            duration = max(sweep_time * pct / 100, 0.06)
             body.append(f'    <path d="M{x0:.2f} {y0:.2f}A{r} {r} 0 {large} 1 {x1:.2f} {y1:.2f}" fill="none"'
-                        f' stroke="{STACK_COLORS[i]}" stroke-width="{stroke}"/>')
+                        f' stroke="{STACK_COLORS[i]}" stroke-width="{stroke}" stroke-dasharray="{length + 1:.1f}" class="seg{i}"/>')
+            css.append(f"    @keyframes seg{i} {{ from {{ stroke-dashoffset: {length + 1:.1f}; }} }}\n"
+                       f"    .seg{i} {{ animation: seg{i} {duration:.2f}s linear {delay:.2f}s both; }}")
             angle += sweep
-    return card(width, height, "Most Used Stack", "\n".join(body))
+            delay += duration
+    return card(width, height, "Most Used Stack", "\n".join(body), css="\n" + "\n".join(css))
 
 
 def fmt_day(day, with_year):
@@ -433,30 +475,36 @@ def streak_svg(total, since, current, longest, today):
       <stop offset="1" stop-color="{MAGENTA}"/>
     </linearGradient>"""
 
-    def side(x, number, label, sub):
+    def side(x, number, label, sub, delay):
         return [
-            f'    <text x="{x:.1f}" y="92" text-anchor="middle" font-size="32" font-weight="700" fill="url(#figure)">{escape(number)}</text>',
-            f'    <text x="{x:.1f}" y="124" text-anchor="middle" font-size="14" font-weight="600" fill="{LAVENDER}">{escape(label)}</text>',
-            f'    <text x="{x:.1f}" y="150" text-anchor="middle" font-size="12" fill="{LAVENDER}" fill-opacity="0.65">{escape(sub)}</text>',
+            f'    <text x="{x:.1f}" y="92" text-anchor="middle" font-size="32" font-weight="700" fill="url(#figure)"{anim("fade", delay)}>{escape(number)}</text>',
+            f'    <text x="{x:.1f}" y="124" text-anchor="middle" font-size="14" font-weight="600" fill="{LAVENDER}"{anim("fade", delay + 0.1)}>{escape(label)}</text>',
+            f'    <text x="{x:.1f}" y="150" text-anchor="middle" font-size="12" fill="{LAVENDER}" fill-opacity="0.65"{anim("fade", delay + 0.2)}>{escape(sub)}</text>',
         ]
 
     cx, cy, r = width / 2, 78, 40
+    circumference = 2 * math.pi * r
     since_text = f"{fmt_day(since, True)} - Present"
-    body = side(col / 2, f"{total:,}", "Total Contributions", since_text)
+    body = side(col / 2, f"{total:,}", "Total Contributions", since_text, 0.3)
     body += [
-        f'    <line x1="{col:.1f}" y1="38" x2="{col:.1f}" y2="158" stroke="{SOFT}" stroke-opacity="0.22"/>',
-        f'    <line x1="{2 * col:.1f}" y1="38" x2="{2 * col:.1f}" y2="158" stroke="{SOFT}" stroke-opacity="0.22"/>',
-        f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#ring)" stroke-width="5"/>',
+        f'    <line x1="{col:.1f}" y1="38" x2="{col:.1f}" y2="158" stroke="{SOFT}" stroke-opacity="0.22"{anim("fade", 0.2)}/>',
+        f'    <line x1="{2 * col:.1f}" y1="38" x2="{2 * col:.1f}" y2="158" stroke="{SOFT}" stroke-opacity="0.22"{anim("fade", 0.2)}/>',
+        f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#ring)" stroke-width="5"'
+        f' stroke-dasharray="{circumference:.1f}" transform="rotate(-90 {cx} {cy})" class="streak"/>',
         f'    <circle cx="{cx}" cy="{cy - r}" r="11" fill="{BG}"/>',
         # flame
-        f'    <path d="M{cx} {cy - r - 10}c3.2 3.6 7 6.6 7 11.2a7 7 0 0 1-14 0c0-2.6 1.2-4.4 2.8-5.9.2 1.8 1 3 2.3 3.6-.4-3.4.3-6.2 1.9-8.9Z"'
-        f' fill="url(#ring)"/>',
-        f'    <text x="{cx}" y="{cy + 10}" text-anchor="middle" font-size="28" font-weight="700" fill="{WHITE}">{current[0]}</text>',
-        f'    <text x="{cx}" y="146" text-anchor="middle" font-size="14" font-weight="700" fill="{SOFT}">Current Streak</text>',
-        f'    <text x="{cx}" y="170" text-anchor="middle" font-size="12" fill="{LAVENDER}" fill-opacity="0.65">{escape(fmt_range(current[1], current[2], today))}</text>',
+        f'    <g{anim("pop", 1.1)}><path d="M{cx} {cy - r - 10}c3.2 3.6 7 6.6 7 11.2a7 7 0 0 1-14 0c0-2.6 1.2-4.4 2.8-5.9.2 1.8 1 3 2.3 3.6-.4-3.4.3-6.2 1.9-8.9Z"'
+        f' fill="url(#ring)"/></g>',
+        f'    <text x="{cx}" y="{cy + 10}" text-anchor="middle" font-size="28" font-weight="700" fill="{WHITE}"{anim("pop", 0.7)}>{current[0]}</text>',
+        f'    <text x="{cx}" y="146" text-anchor="middle" font-size="14" font-weight="700" fill="{SOFT}"{anim("fade", 0.9)}>Current Streak</text>',
+        f'    <text x="{cx}" y="170" text-anchor="middle" font-size="12" fill="{LAVENDER}" fill-opacity="0.65"{anim("fade", 1.0)}>'
+        f'{escape(fmt_range(current[1], current[2], today))}</text>',
     ]
-    body += side(col * 2.5, str(longest[0]), "Longest Streak", fmt_range(longest[1], longest[2], today))
-    return card(width, height, "GitHub contribution streak", "\n".join(body), defs)
+    body += side(col * 2.5, str(longest[0]), "Longest Streak", fmt_range(longest[1], longest[2], today), 1.2)
+    css = f"""
+    @keyframes streakDraw {{ from {{ stroke-dashoffset: {circumference:.1f}; }} }}
+    .streak {{ animation: streakDraw 0.9s ease-out 0.3s both; }}"""
+    return card(width, height, "GitHub contribution streak", "\n".join(body), defs, css)
 
 
 # --------------------------------------------------------------------------
