@@ -1,6 +1,8 @@
+<img src="./assets/wave-top.svg" alt="" width="100%"/>
+
 <div align="center">
 
-# HELINITY
+<img src="./assets/helinity-banner.svg" alt="HELINITY" width="900"/>
 
 <p align="center">
   <img
@@ -192,4 +194,21 @@ Local-first analysis and visualization of data movement across Python and PyTorc
 </tr>
 </table>
 
+<br>
+
+---
+
+## <img src="./assets/github-activity.svg" alt="GitHub Activity" height="36"/>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Helincharm/Helincharm/output/github-stats.svg" alt="Helin's GitHub Stats" width="54%"/>
+  <img src="https://raw.githubusercontent.com/Helincharm/Helincharm/output/stack.svg" alt="Most Used Stack" width="44%"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Helincharm/Helincharm/output/streak.svg" alt="GitHub Streak" width="66%"/>
+</p>
+
 </div>
+
+<img src="./assets/wave-bottom.svg" alt="" width="100%"/>
