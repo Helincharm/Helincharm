@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="374" height="230" viewBox="0 0 374 230" role="img" aria-label="Most Used Stack">
+  <defs>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.45" stop-color="#EADDEF"/>
+      <stop offset="1" stop-color="#BA9BF8"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="0.92" cy="0.05" r="0.8">
+      <stop offset="0" stop-color="#7030EF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#7030EF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    @keyframes fadeIn { from { opacity: 0; } }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(-10px); } }
+    @keyframes popIn { from { opacity: 0; transform: scale(0.6); } }
+    .fade { animation: fadeIn 0.6s ease-out both; }
+    .slide { animation: slideIn 0.6s ease-out both; }
+    .pop { transform-box: fill-box; transform-origin: center; animation: popIn 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    @keyframes seg0 { from { stroke-dashoffset: 264.6; } }
+    .seg0 { animation: seg0 0.86s linear 0.30s both; }
+    @keyframes seg1 { from { stroke-dashoffset: 42.9; } }
+    .seg1 { animation: seg1 0.14s linear 1.16s both; }
+    @keyframes seg2 { from { stroke-dashoffset: 25.0; } }
+    .seg2 { animation: seg2 0.08s linear 1.30s both; }
+    @keyframes seg3 { from { stroke-dashoffset: 1.5; } }
+    .seg3 { animation: seg3 0.06s linear 1.38s both; }
+    @keyframes seg4 { from { stroke-dashoffset: 1.5; } }
+    .seg4 { animation: seg4 0.06s linear 1.44s both; }
+    @keyframes seg5 { from { stroke-dashoffset: 1.1; } }
+    .seg5 { animation: seg5 0.06s linear 1.50s both; }
+    @keyframes seg6 { from { stroke-dashoffset: 1.1; } }
+    .seg6 { animation: seg6 0.06s linear 1.56s both; }
+    @keyframes seg7 { from { stroke-dashoffset: 1.1; } }
+    .seg7 { animation: seg7 0.06s linear 1.62s both; }
+  </style>
+  <rect x="0.5" y="0.5" width="373" height="229" rx="14" fill="#090820" stroke="#7030EF" stroke-opacity="0.28"/>
+  <rect x="0.5" y="0.5" width="373" height="229" rx="14" fill="url(#haze)"/>
+  <g font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">
+    <text x="26" y="42" font-size="18" font-weight="700" fill="url(#title)" class="fade" style="animation-delay: 0.00s">Most Used Stack</text>
+    <g class="slide" style="animation-delay: 0.15s">
+      <circle cx="31" cy="71.5" r="5" fill="#7030EF"/>
+      <text x="44" y="76.0" font-size="13" font-weight="600" fill="#EADDEF">Python <tspan fill="#BA9BF8" font-weight="400">78.1%</tspan></text>
+    </g>
+    <g class="slide" style="animation-delay: 0.25s">
+      <circle cx="31" cy="91.5" r="5" fill="#FDCBF2"/>
+      <text x="44" y="96.0" font-size="13" font-weight="600" fill="#EADDEF">TypeScript <tspan fill="#BA9BF8" font-weight="400">12.8%</tspan></text>
+    </g>
+    <g class="slide" style="animation-delay: 0.35s">
+      <circle cx="31" cy="111.5" r="5" fill="#0034FE"/>
+      <text x="44" y="116.0" font-size="13" font-weight="600" fill="#EADDEF">React <tspan fill="#BA9BF8" font-weight="400">7.5%</tspan></text>
+    </g>
+    <g class="slide" style="animation-delay: 0.45s">
+      <circle cx="31" cy="131.5" r="5" fill="#DB1FFF"/>
+      <text x="44" y="136.0" font-size="13" font-weight="600" fill="#EADDEF">PyTorch <tspan fill="#BA9BF8" font-weight="400">0.6%</tspan></text>
+    </g>
+    <g class="slide" style="animation-delay: 0.55s">
+      <circle cx="31" cy="151.5" r="5" fill="#BA9BF8"/>
+      <text x="44" y="156.0" font-size="13" font-weight="600" fill="#EADDEF">FastAPI <tspan fill="#BA9BF8" font-weight="400">0.6%</tspan></text>
+    </g>
+    <g class="slide" style="animation-delay: 0.65s">
+      <circle cx="31" cy="171.5" r="5" fill="#776EFE"/>
+      <text x="44" y="176.0" font-size="13" font-weight="600" fill="#EADDEF">GitHub Actions <tspan fill="#BA9BF8" font-weight="400">0.2%</tspan></text>
+    </g>
+    <g class="slide" style="animation-delay: 0.75s">
+      <circle cx="31" cy="191.5" r="5" fill="#A087FD"/>
+      <text x="44" y="196.0" font-size="13" font-weight="600" fill="#EADDEF">Docker <tspan fill="#BA9BF8" font-weight="400">0.1%</tspan></text>
+    </g>
+    <g class="slide" style="animation-delay: 0.85s">
+      <circle cx="31" cy="211.5" r="5" fill="#2044FA"/>
+      <text x="44" y="216.0" font-size="13" font-weight="600" fill="#EADDEF">C# <tspan fill="#BA9BF8" font-weight="400">0.0%</tspan></text>
+    </g>
+    <path d="M282.75 78.01A54 54 0 1 1 228.90 122.19" fill="none" stroke="#7030EF" stroke-width="18" stroke-dasharray="264.6" class="seg0"/>
+    <path d="M229.19 120.71A54 54 0 0 1 252.25 86.93" fill="none" stroke="#FDCBF2" stroke-width="18" stroke-dasharray="42.9" class="seg1"/>
+    <path d="M253.52 86.12A54 54 0 0 1 276.05 78.33" fill="none" stroke="#0034FE" stroke-width="18" stroke-dasharray="25.0" class="seg2"/>
+    <path d="M277.55 78.18A54 54 0 0 1 278.04 78.15" fill="none" stroke="#DB1FFF" stroke-width="18" stroke-dasharray="1.5" class="seg3"/>
+    <path d="M279.55 78.06A54 54 0 0 1 280.03 78.04" fill="none" stroke="#BA9BF8" stroke-width="18" stroke-dasharray="1.5" class="seg4"/>
+    <path d="M281.54 78.00A54 54 0 0 1 281.60 78.00" fill="none" stroke="#776EFE" stroke-width="18" stroke-dasharray="1.1" class="seg5"/>
+    <path d="M282.34 78.00A54 54 0 0 1 282.40 78.00" fill="none" stroke="#A087FD" stroke-width="18" stroke-dasharray="1.1" class="seg6"/>
+    <path d="M282.64 78.00A54 54 0 0 1 282.69 78.00" fill="none" stroke="#2044FA" stroke-width="18" stroke-dasharray="1.1" class="seg7"/>
+  </g>
+</svg>
