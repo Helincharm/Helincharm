@@ -19,121 +19,121 @@
 <table align="center">
 
 <tr>
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/python-icon.svg" width="46" height="46" alt="Python"/><br><b>Python</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" width="46" height="46" alt="PyTorch"/><br><b>PyTorch</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="46" height="46" alt="TypeScript"/><br><b>TypeScript</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React"/><br><b>React</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="46" height="46" alt="Node.js"/><br><b>Node.js</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="46" height="46" alt="PostgreSQL"/><br><b>PostgreSQL</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="46" height="46" alt="FastAPI"/><br><b>FastAPI</b>
   </td>
 </tr>
 
 <tr>
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" width="46" height="46" alt="TensorFlow"/><br><b>TensorFlow</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" width="46" height="46" alt="NumPy"/><br><b>NumPy</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.simpleicons.org/threedotjs/000000/ffffff" width="46" height="46" alt="Three.js"/><br><b>Three.js</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/docker-icon.svg" width="46" height="46" alt="Docker"/><br><b>Docker</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="46" height="46" alt="Git"/><br><b>Git</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="46" height="46" alt="GitHub Actions"/><br><b>Actions</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.simpleicons.org/stripe" width="46" height="46" alt="Stripe"/><br><b>Stripe</b>
   </td>
 </tr>
 
 <tr>
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.simpleicons.org/pydantic" width="46" height="46" alt="Pydantic"/><br><b>Pydantic</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="46" height="46" alt="Vite"/><br><b>Vite</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" width="46" height="46" alt="Playwright"/><br><b>Playwright</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg" width="46" height="46" alt="pytest"/><br><b>pytest</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg" width="46" height="46" alt="Vitest"/><br><b>Vitest</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.simpleicons.org/burpsuite" width="46" height="46" alt="Burp Suite"/><br><b>Burp Suite</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.simpleicons.org/metasploit" width="46" height="46" alt="Metasploit"/><br><b>Metasploit</b>
   </td>
 </tr>
 
 <tr>
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="46" height="46" alt="Linux"/><br><b>Linux</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="46" height="46" alt="C#"/><br><b>C#</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React Native"/><br><b>React Native</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.simpleicons.org/raspberrypi" width="46" height="46" alt="Raspberry Pi"/><br><b>Raspberry Pi</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.simpleicons.org/espressif" width="46" height="46" alt="ESP32"/><br><b>ESP32</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="46" height="46" alt="VS Code"/><br><b>VS Code</b>
   </td>
 
-  <td align="center" width="96">
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" width="46" height="46" alt="PyCharm"/><br><b>PyCharm</b>
   </td>
 </tr>
