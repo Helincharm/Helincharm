@@ -134,6 +134,10 @@
   <td align="center" width="96">
     <img src="https://cdn.simpleicons.org/pydantic" width="46" height="46" alt="Pydantic"/><br><b>Pydantic</b>
   </td>
+
+  <td align="center" width="96">
+    <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React Native"/><br><b>React Native</b>
+  </td>
 </tr>
 
 </table>
