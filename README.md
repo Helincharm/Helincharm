@@ -24,6 +24,10 @@
   </td>
 
   <td align="center" width="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="46" height="46" alt="C#"/><br><b>C#</b>
+  </td>
+
+  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" width="46" height="46" alt="PyTorch"/><br><b>PyTorch</b>
   </td>
 
@@ -46,13 +50,13 @@
   <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="46" height="46" alt="TypeScript"/><br><b>TypeScript</b>
   </td>
-
-  <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/js-icon.svg" width="46" height="46" alt="JavaScript"/><br><b>JavaScript</b>
-  </td>
 </tr>
 
 <tr>
+  <td align="center" width="100">
+    <img src="https://techstack-generator.vercel.app/js-icon.svg" width="46" height="46" alt="JavaScript"/><br><b>JavaScript</b>
+  </td>
+
   <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React"/><br><b>React</b>
   </td>
@@ -80,15 +84,11 @@
   <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="46" height="46" alt="Git"/><br><b>Git</b>
   </td>
-
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="46" height="46" alt="GitHub Actions"/><br><b>Actions</b>
-  </td>
 </tr>
 
 <tr>
   <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="46" height="46" alt="Linux"/><br><b>Linux</b>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="46" height="46" alt="GitHub Actions"/><br><b>Actions</b>
   </td>
 
   <td align="center" width="100">
@@ -134,10 +134,6 @@
   </td>
 
   <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="46" height="46" alt="C#"/><br><b>C#</b>
-  </td>
-
-  <td align="center" width="100">
     <img src="https://cdn.simpleicons.org/raspberrypi" width="46" height="46" alt="Raspberry Pi"/><br><b>Raspberry Pi</b>
   </td>
 
@@ -151,6 +147,10 @@
 
   <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" width="46" height="46" alt="PyCharm"/><br><b>PyCharm</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="46" height="46" alt="Linux"/><br><b>Linux</b>
   </td>
 </tr>
 
