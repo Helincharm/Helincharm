@@ -28,9 +28,31 @@
   </td>
 
   <td align="center" width="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" width="46" height="46" alt="TensorFlow"/><br><b>TensorFlow</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" width="46" height="46" alt="NumPy"/><br><b>NumPy</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://cdn.simpleicons.org/pydantic" width="46" height="46" alt="Pydantic"/><br><b>Pydantic</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="46" height="46" alt="FastAPI"/><br><b>FastAPI</b>
+  </td>
+
+  <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="46" height="46" alt="TypeScript"/><br><b>TypeScript</b>
   </td>
 
+  <td align="center" width="100">
+    <img src="https://techstack-generator.vercel.app/js-icon.svg" width="46" height="46" alt="JavaScript"/><br><b>JavaScript</b>
+  </td>
+</tr>
+
+<tr>
   <td align="center" width="100">
     <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React"/><br><b>React</b>
   </td>
@@ -44,21 +66,11 @@
   </td>
 
   <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="46" height="46" alt="FastAPI"/><br><b>FastAPI</b>
-  </td>
-</tr>
-
-<tr>
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" width="46" height="46" alt="TensorFlow"/><br><b>TensorFlow</b>
+    <img src="https://techstack-generator.vercel.app/mysql-icon.svg" width="46" height="46" alt="MySQL"/><br><b>MySQL</b>
   </td>
 
   <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" width="46" height="46" alt="NumPy"/><br><b>NumPy</b>
-  </td>
-
-  <td align="center" width="100">
-    <img src="https://cdn.simpleicons.org/threedotjs/000000/ffffff" width="46" height="46" alt="Three.js"/><br><b>Three.js</b>
+    <img src="https://cdn.simpleicons.org/stripe" width="46" height="46" alt="Stripe"/><br><b>Stripe</b>
   </td>
 
   <td align="center" width="100">
@@ -72,21 +84,43 @@
   <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="46" height="46" alt="GitHub Actions"/><br><b>Actions</b>
   </td>
-
-  <td align="center" width="100">
-    <img src="https://cdn.simpleicons.org/stripe" width="46" height="46" alt="Stripe"/><br><b>Stripe</b>
-  </td>
 </tr>
 
 <tr>
   <td align="center" width="100">
-    <img src="https://cdn.simpleicons.org/pydantic" width="46" height="46" alt="Pydantic"/><br><b>Pydantic</b>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="46" height="46" alt="Linux"/><br><b>Linux</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://cdn.simpleicons.org/burpsuite" width="46" height="46" alt="Burp Suite"/><br><b>Burp Suite</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://cdn.simpleicons.org/metasploit" width="46" height="46" alt="Metasploit"/><br><b>Metasploit</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://cdn.simpleicons.org/threedotjs/000000/ffffff" width="46" height="46" alt="Three.js"/><br><b>Three.js</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React Native"/><br><b>React Native</b>
   </td>
 
   <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="46" height="46" alt="Vite"/><br><b>Vite</b>
   </td>
 
+  <td align="center" width="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="46" height="46" alt="HTML5"/><br><b>HTML5</b>
+  </td>
+
+  <td align="center" width="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="46" height="46" alt="CSS3"/><br><b>CSS3</b>
+  </td>
+</tr>
+
+<tr>
   <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" width="46" height="46" alt="Playwright"/><br><b>Playwright</b>
   </td>
@@ -100,25 +134,7 @@
   </td>
 
   <td align="center" width="100">
-    <img src="https://cdn.simpleicons.org/burpsuite" width="46" height="46" alt="Burp Suite"/><br><b>Burp Suite</b>
-  </td>
-
-  <td align="center" width="100">
-    <img src="https://cdn.simpleicons.org/metasploit" width="46" height="46" alt="Metasploit"/><br><b>Metasploit</b>
-  </td>
-</tr>
-
-<tr>
-  <td align="center" width="100">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="46" height="46" alt="Linux"/><br><b>Linux</b>
-  </td>
-
-  <td align="center" width="100">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="46" height="46" alt="C#"/><br><b>C#</b>
-  </td>
-
-  <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React Native"/><br><b>React Native</b>
   </td>
 
   <td align="center" width="100">
