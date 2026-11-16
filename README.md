@@ -20,7 +20,7 @@
 
 <tr>
   <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/python-icon.svg" width="46" height="46" alt="Python"/><br><b>Python</b>
+    <img src="./assets/techstack/python-icon.svg" width="46" height="46" alt="Python"/><br><b>Python</b>
   </td>
 
   <td align="center" width="100">
@@ -48,17 +48,17 @@
   </td>
 
   <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="46" height="46" alt="TypeScript"/><br><b>TypeScript</b>
+    <img src="./assets/techstack/ts-icon.svg" width="46" height="46" alt="TypeScript"/><br><b>TypeScript</b>
   </td>
 </tr>
 
 <tr>
   <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/js-icon.svg" width="46" height="46" alt="JavaScript"/><br><b>JavaScript</b>
+    <img src="./assets/techstack/js-icon.svg" width="46" height="46" alt="JavaScript"/><br><b>JavaScript</b>
   </td>
 
   <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React"/><br><b>React</b>
+    <img src="./assets/techstack/react-icon.svg" width="46" height="46" alt="React"/><br><b>React</b>
   </td>
 
   <td align="center" width="100">
@@ -70,7 +70,7 @@
   </td>
 
   <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/mysql-icon.svg" width="46" height="46" alt="MySQL"/><br><b>MySQL</b>
+    <img src="./assets/techstack/mysql-icon.svg" width="46" height="46" alt="MySQL"/><br><b>MySQL</b>
   </td>
 
   <td align="center" width="100">
@@ -78,7 +78,7 @@
   </td>
 
   <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/docker-icon.svg" width="46" height="46" alt="Docker"/><br><b>Docker</b>
+    <img src="./assets/techstack/docker-icon.svg" width="46" height="46" alt="Docker"/><br><b>Docker</b>
   </td>
 
   <td align="center" width="100">
@@ -104,7 +104,7 @@
   </td>
 
   <td align="center" width="100">
-    <img src="https://techstack-generator.vercel.app/react-icon.svg" width="46" height="46" alt="React Native"/><br><b>React Native</b>
+    <img src="./assets/techstack/react-icon.svg" width="46" height="46" alt="React Native"/><br><b>React Native</b>
   </td>
 
   <td align="center" width="100">
